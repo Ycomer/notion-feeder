@@ -61,7 +61,7 @@ jobs:
       - name: Commit and Push
         run: |
           if [ $(git status dist --porcelain=v1 2>/dev/null | wc -l) != "0" ] ; then
-            git config user.name "ycomer"
+            git config user.name "Ycomer"
             git config user.email dongfangyuan404@gmail.com
             git add dist
             git commit -m "chore: updated build"
