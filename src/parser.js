@@ -2,6 +2,7 @@ import { markdownToBlocks } from '@tryfabric/martian';
 import TurndownService from 'turndown';
 
 function htmlToMarkdownJSON(htmlContent) {
+  console.log(htmlContent);
   try {
     const turndownService = new TurndownService();
     return turndownService.turndown(htmlContent);
